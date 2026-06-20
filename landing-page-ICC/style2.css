@@ -1,0 +1,732 @@
+/* ===============Cardápio====================== */
+/* ========================================= */
+/* CONTAINER                                 */
+/* ========================================= */
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ========================================= */
+/* CABEÇALHO                                 */
+/* ========================================= */
+
+header {
+    background: #5d0d26;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f1d9b1;
+}
+
+/* ========================================= */
+/* CARDÁPIO                                  */
+/* ========================================= */
+/* CARDÁPIO */
+
+.cardapio {
+    padding: 40px 0;
+}
+
+.container-card {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 30px;
+
+    background: #fbf5ed;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.apresentacao-card {
+    text-align: center;
+}
+
+.apresentacao-card h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 50px;
+}
+
+.apresentacao-card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #34422f;
+    margin: 15px 0;
+}
+
+.linha {
+    width: 120px;
+    height: 2px;
+    background: #b69c72;
+    margin: 15px auto;
+}
+
+/* CATEGORIAS */
+
+.categoria-card {
+    margin-top: 30px;
+}
+
+.categoria-card h2 {
+    color: #5d0d26;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ITENS */
+
+.item-cardapio {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #e0d3bc;
+}
+
+.item-cardapio:last-child {
+    border-bottom: none;
+}
+
+.item-cardapio h3 {
+    color: #4b2f2f;
+    font-size: 18px;
+}
+
+.preco {
+    color: #8c1e3f;
+    font-weight: bold;
+}
+
+/* ========================================= */
+/* RODAPÉ                                    */
+/* ========================================= */
+
+footer {
+
+    background: #5d0d26;
+
+    color: white;
+
+    padding: 30px 0;
+
+    margin-top: 30px;
+}
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.footer-item {
+
+    flex: 1;
+
+    min-width: 180px;
+
+    text-align: center;
+
+    line-height: 1.8;
+}
+
+/* ========================================= */
+/* RESPONSIVIDADE                            */
+/* ========================================= */
+
+@media(max-width:768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .apresentacao-card h1 {
+        font-size: 45px;
+    }
+
+    .categoria-card h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+/* ========================================= */
+/* ==================Galeria=================*/
+/* ========================================= */
+.titulo-pagina{
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.titulo-pagina h1{
+
+    color:var(--vinho);
+    margin-bottom:15px;
+}
+
+.galeria-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px,1fr));
+
+    gap:25px;
+
+    padding:40px;
+}
+
+.foto{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.foto:hover{
+
+    transform:scale(1.03);
+}
+
+.foto img{
+
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.foto p{
+
+    text-align:center;
+
+    padding:15px;
+
+    font-weight:bold;
+}
+/* ========================================= */
+/* ==================QUIZ=================*/
+/* ========================================= */
+.quiz-container{
+     max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fbf5ed;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+}
+/* QUIZ */
+
+.titulo-pagina {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.titulo-pagina h1 {
+    color: #5d0d26;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.titulo-pagina p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* CONTAINER DO QUIZ */
+
+.quiz-container {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+/* PERGUNTAS */
+
+fieldset {
+    background: #fbf5ed;
+    border: 2px solid #d8c5a5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #5d0d26;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+fieldset label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+/* INPUTS */
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* BOTÃO */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #8c1e3f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6f1732;
+}
+
+/* RESULTADO */
+
+#resultado {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5d0d26;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .titulo-pagina h1 {
+        font-size: 36px;
+    }
+
+    .quiz-container {
+        padding: 10px;
+    }
+
+}
+
+/*INDEX*/
+/* ========================================= */
+/* GERAL                                     */
+/* ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background: #f8f5f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ========================================= */
+/* CABEÇALHO                                 */
+/* ========================================= */
+
+header {
+    background: #5d0d26;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f1d9b1;
+}
+/* ========================================= */
+/* 4. HERO (Uso de Grid)                     */
+/* ========================================= */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: grid;              /* GRID */
+    grid-template-columns: 1fr;
+    gap: 40px;                  /* Espaçamento sem margens manuais */
+    align-items: center;
+    padding: 40px 20px;
+    
+    background:
+        linear-gradient(90deg, rgba(112, 33, 51, 0.04) 50%, transparent 50%),
+        linear-gradient(rgba(112, 33, 51, 0.04) 50%, transparent 50%);
+    background-size: 60px 60px;
+    border-radius: 20px;
+}
+
+/* Layout de duas colunas para Desktop */
+@media (min-width: 992px) {
+    .hero-container {
+        grid-template-columns: 55% 45%; /* DUAS COLUNAS */
+    }
+}
+
+.hero-top {
+    background: #fbf5ed;
+    border: 3px solid #d7c3a2;
+    border-radius: 30px;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .hero-top {
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+    }
+}
+
+.camera-area {
+    display: flex;
+    justify-content: center;
+}
+
+.camera-area img {
+    width: 140px;
+}
+
+.hero-title h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: #5d0d26;
+    line-height: 1.1;
+}
+
+.hero-title h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-style: italic;
+    color: #5d0d26;
+    font-weight: 400;
+}
+
+.linha {
+    width: 100px;
+    height: 2px;
+    background: #5d0d26;
+    margin: 15px auto;
+}
+
+@media (min-width: 576px) {
+    .linha { margin: 15px 0; }
+    .hero-title h1, .hero-title h2 { text-align: left; }
+}
+
+.hero-title h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Foto e Elementos Visuais (Polaroid e Post-it) */
+.hero-photo {
+    position: relative; /* Mantém o post-it alinhado aqui dentro */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px; 
+}
+
+.polaroid {
+    background: white;
+    padding: 15px 15px 50px 15px;
+    width: 80%;
+    max-width: 320px;
+    transform: rotate(4deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* AJUSTE DE SOMBRA */
+}
+
+.post-it {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    background: #c47b87;                          /* VARIAÇÃO DE COR */
+    width: 180px;
+    height: 130px;
+    transform: rotate(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* AJUSTE DE SOMBRA */
+    padding: 10px;
+}
+
+.post-it p {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.2;
+}
+/* ========================================= */
+/* HERO                                      */
+/* ========================================= */
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero-container {
+    text-align: center;
+}
+
+.hero-card {
+    background: white;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-title h1,
+.hero-title h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+}
+
+.hero-title h1 {
+    font-size: 50px;
+}
+
+.hero-title h2 {
+    font-size: 40px;
+}
+
+.hero-title h3 {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.linha {
+    width: 100px;
+    height: 2px;
+    background: #d8c5a5;
+    margin: 15px auto;
+}
+
+/* ========================================= */
+/* FOTO                                      */
+/* ========================================= */
+
+.hero-photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.polaroid img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.post-it {
+    margin-top: 15px;
+    color: #5d0d26;
+    font-style: italic;
+}
+
+/* ========================================= */
+/* SEÇÕES                                    */
+/* ========================================= */
+
+.bem-vindo,
+.historia,
+.proposito,
+.cta-experiencias {
+    background: white;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.bem-vindo h2,
+.historia h2,
+.proposito h2,
+.cta-experiencias h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bem-vindo p,
+.historia p,
+.proposito p,
+.cta-experiencias p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ========================================= */
+/* BOTÃO                                     */
+/* ========================================= */
+
+.botao-experiencias {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #5d0d26;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao-experiencias:hover {
+    background: #7a1435;
+}
+
+/* ========================================= */
+/* RODAPÉ                                    */
+/* ========================================= */
+
+footer {
+    background: #5d0d26;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* ========================================= */
+/* RESPONSIVO                                */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-title h1 {
+        font-size: 40px;
+    }
+
+    .hero-title h2 {
+        font-size: 30px;
+    }
+
+    .bem-vindo,
+    .historia,
+    .proposito,
+    .cta-experiencias {
+        padding: 25px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}

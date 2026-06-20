@@ -1,0 +1,326 @@
+/* ========================================= */
+/* RESET / BASE                              */
+/* ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6efe6;
+    font-family: 'Lora', serif;
+    color: #3d0c1e;
+}
+
+/* ========================================= */
+/* CONTAINER (PADRÃO GERAL)                  */
+/* ========================================= */
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ========================================= */
+/* CABEÇALHO                                 */
+/* ========================================= */
+
+header {
+    background: #5d0d26;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f1d9b1;
+}
+
+/* ========================================= */
+/* CATÁLOGO                                  */
+/* ========================================= */
+
+.catalogo-banner,
+.catalogo-intro {
+    background: white;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.catalogo-banner h1,
+.catalogo-intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.catalogo-banner p,
+.catalogo-intro p {
+    line-height: 1.8;
+}
+
+.experiencias {
+    padding: 30px 0;
+}
+
+.titulo-experiencias {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-experiencias h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d0d26;
+    font-size: 38px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 2px solid #d8c5a5;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #5d0d26;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card button {
+    background: #5d0d26;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #7a1435;
+}
+
+/* ========================================= */
+/* SESSÃO FILME / QUIZ                       */
+/* ========================================= */
+
+.hero-container,
+.informacoes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.cinema-card,
+.filme-card,
+.info-card,
+.formulario-card {
+    background-color: #fdfbf7;
+    border: 1px solid #e1d4c3;
+    border-radius: 12px;
+    padding: 35px;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5c1d32;
+    margin-top: 0;
+}
+
+.titulo-cinema h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.titulo-cinema h2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #7d6b58;
+}
+
+.linha {
+    height: 1px;
+    background-color: #e1d4c3;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.filme-conteudo {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.poster img {
+    max-width: 180px;
+    border-radius: 6px;
+    border: 1px solid #e1d4c3;
+}
+
+.filme-info h2 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f6efe6;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.beneficio img {
+    width: 24px;
+    height: 24px;
+}
+
+.citacao blockquote {
+    font-style: italic;
+    color: #5c1d32;
+    border-left: 3px solid #5c1d32;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* FORMULÁRIO */
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #5c1d32;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1d4c3;
+    border-radius: 6px;
+    background: white;
+    font-family: 'Lora', serif;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #5c1d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #3d0c1e;
+}
+
+/* ========================================= */
+/* RODAPÉ                                    */
+/* ========================================= */
+
+footer {
+    background: #5d0d26;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* ========================================= */
+/* RESPONSIVO                                */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
