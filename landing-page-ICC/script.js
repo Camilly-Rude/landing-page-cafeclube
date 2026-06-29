@@ -62,6 +62,7 @@ if (formInscricao) {
         // pega os campos (mesmos ids nas duas páginas)
         const nome = document.getElementById("nome");
         const email = document.getElementById("email");
+        const contador = document.getElementById("contador");
 
         // validação básica obrigatória
         if (!nome.value || !email.value) {
@@ -73,6 +74,9 @@ if (formInscricao) {
 
         // mensagem de sucesso
         alert("✅ Inscrição realizada com sucesso! Em breve entraremos em contato.");
+
+        // aumenta o contador
+        contador.textContent = Number(contador.textContent) + 1;
 
         // limpa o formulário
         formInscricao.reset();
@@ -95,7 +99,7 @@ if (formulario) {
         event.preventDefault();
 
         // CAPTURA DAS RESPOSTAS
-        
+
         const atracao = document.querySelector('input[name="atracao"]:checked');
         const livro = document.querySelector('input[name="livro"]:checked');
         const filme = document.querySelector('input[name="filme"]:checked');
@@ -103,7 +107,7 @@ if (formulario) {
         const periodo = document.querySelector('input[name="periodo"]:checked');
 
         // VALIDAÇÃO
-        
+
         if (!atracao || !livro || !filme || !bebida || !periodo) {
 
             resultado.innerHTML =
@@ -130,7 +134,7 @@ if (formulario) {
         }
 
         // RESULTADO FINAL
-        
+
         resultado.innerHTML = `
             <h2>${perfil}</h2>
             <p>Você combina com experiências do Café Clube!</p>
